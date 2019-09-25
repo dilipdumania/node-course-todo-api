@@ -116,7 +116,6 @@ app.post('/users', (req, res) => {
         res.header('x-auth', token).send(user);
     
     }).catch((e) => {
-        console.log('Error Occured: ', e);
         res.status(400).send(e);
     })
 });
